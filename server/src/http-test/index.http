@@ -1,0 +1,39 @@
+###
+GET http://localhost:4000/api/users
+
+###
+POST http://localhost:4000/api/login
+content-type: application/json
+
+{
+    "username": "thanhd",
+    "password": "12345678"
+}
+
+###
+POST http://localhost:4000/api/signup
+content-type: application/json
+
+{
+    "username": "phung",
+    "password": "12345678",
+    "role": "seller"
+}
+
+###
+POST http://localhost:4000/api/user/add
+content-type: application/json
+
+{
+    "username": "ngoc",
+    "password": "12345678",
+    "role": "seller",
+    "avatarUrl": "https://via.placeholder.com/150",
+    "fullname": "Tran Bich Ngoc"
+}
+
+###
+GET http://localhost:4000/api/products
+
+###
+GET http://localhost:4000/api/product/324

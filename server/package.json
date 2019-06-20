@@ -1,0 +1,33 @@
+{
+  "name": "web-shop-server",
+  "version": "1.0.0",
+  "description": "server for database lab web shop",
+  "main": "src/server.js",
+  "scripts": {
+    "dev": "PGUSER=postgres PGHOST=localhost PGPASSWORD=123456 PGDATABASE=webshop PGPORT=5432 babel-node src/server.js",
+    "build": "babel src/ -d dist/",
+    "start": "node dist/server.js"
+  },
+  "author": "Đào Ngọc Thành",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "dotenv": "^7.0.0",
+    "eslint": "^5.15.3",
+    "express": "^4.16.4",
+    "morgan": "^1.9.1",
+    "pg": "^7.9.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.4.0",
+    "@babel/node": "^7.2.2",
+    "babel-cli": "^6.26.0",
+    "babel-plugin-module-resolver": "^3.2.0",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-env": "^1.7.0",
+    "eslint-config-node": "^4.0.0",
+    "eslint-plugin-import": "^2.16.0"
+  }
+}
